@@ -45,7 +45,7 @@ var savedMessage = $("#savedMessage");
     // displaying clock
 
 function displayTime() {
-    var time = moment().format("MMMM Mo, YYYY[\n]hh:mm:ss a");
+    var time = moment().format("MMMM Do, YYYY[\n]hh:mm:ss a");
     dateTimeEl.text(time);
 }
 console.log(moment());
@@ -92,7 +92,7 @@ $(":button").on("click", function(event){
 
     // post message to the header that the task has been saved to local storage and then setTimeout to remove the message.
 
-    savedMessage.text("Your message has been saved to local storage!");
+    savedMessage.text("The task has been saved!");
     
     setTimeout(function(){
         savedMessage.text("");
