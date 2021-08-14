@@ -120,7 +120,6 @@ function setTasks() {
 
     for (let i=0; i < pullBackEL.length; i++) {
         var savedItem = localStorage.getItem(pullBackEL[i]);
-        console.log(savedItem);
 
         if (pullBackEL[i]) {
           hours[i].lookup.text(savedItem);
